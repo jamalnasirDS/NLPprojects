@@ -1,18 +1,37 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
+# In[15]:
 
 
+##good effort 
+
+import streamlit as st
+import numpy as np
 import pandas as pd
 
-data = {
-  "calories": [420, 380, 390],
-  "duration": [50, 40, 45]
-}
+df = pd.read_csv('d:test2.csv')
+st.table(df)
 
-#load data into a DataFrame object:
-df = pd.DataFrame(data)
+st.dataframe(df)
 
-print(df) 
+st.dataframe(df.style.highlight_max(axis=0))
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
+
+
+# In[ ]:
+
+
+
 
